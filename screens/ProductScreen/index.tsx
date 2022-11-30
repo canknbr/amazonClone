@@ -5,7 +5,7 @@ import product from '../../assets/data/product';
 import { Picker } from '@react-native-picker/picker';
 import QuantitySelector from '../../components/QuantitySelector';
 import Button from '../../components/Button';
-
+import CarouselImage from '../../components/CarouselImage';
 const ProductScreen = () => {
   const [selectedOption, setSelectedOption] = useState(
     product.options ? product.options[0] : null
@@ -14,6 +14,7 @@ const ProductScreen = () => {
   return (
     <View style={styles.root}>
       <Text style={styles.title}>{product.title}</Text>
+      <CarouselImage image={product.images} />
       <Picker
         selectedValue={selectedOption}
         onValueChange={itemValue => setSelectedOption(itemValue)}
