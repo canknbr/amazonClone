@@ -1,6 +1,10 @@
 import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
-  container: {},
+  root: {
+    flex: 1,
+    padding: 10,
+    paddingTop: 60,
+  },
   title: {},
   price: {
     fontSize: 18,
@@ -13,6 +17,16 @@ const styles = StyleSheet.create({
     textDecorationLine: 'line-through',
     marginHorizontal: 20,
   },
+  description: {
+    marginVertical: 10,
+    lineHeight: 20,
+  },
+  image: {},
+  colors: {},
+  sizes: {},
+  quantity: {},
+  addToCartButton: {},
+  addToCartButtonText: {},
 });
 
 export default styles;
